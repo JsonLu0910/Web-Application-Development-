@@ -1,0 +1,327 @@
+* {
+
+    box-sizing: border-box;
+  }
+/* Column container */
+.container {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    background-color: white;
+    padding-right: 20px;
+  }
+
+
+.side .title{
+    padding: 7px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* The container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #000000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+h3.heading{
+  color:white;
+  background-color: #333;
+  padding: 10px;
+  text-transform: uppercase;
+}
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 80%; /* IE10 */
+    flex: 80%;
+    background-color:white;
+    padding: 0px;
+  }
+  .shoe-sorter *{
+    display: inline-block;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+  }
+  select.sorter{
+    padding:0.3rem 1.5rem 0.3rem 0.3rem;
+    color: #333333;
+    background-color:white;
+    border:1px solid #dddddd;
+    cursor:pointer;
+}
+
+  .product-img img{
+    width: 100%;
+    display: block;
+  }
+  .products .container{
+    width: 88vw;
+    margin: 0 auto;
+  }
+
+  .sm-title{
+    padding: 0.6rem 0;
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .text-light{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height:1.5;
+    opacity: 0.5;
+    margin: 0.4rem 0;
+  }
+
+  /* product section */
+  .products{
+    background: #f8f9fa;
+    padding: 0;
+  }
+
+  .products .text-light{
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+  }
+
+  .product{
+    margin: 2rem;
+    position: relative;
+  }
+
+  .product-content{
+    background: #ededed;
+    
+    padding: 3rem 1rem 1rem 1rem;
+    
+    cursor:pointer;
+  }
+
+  .product-img{
+    /* background: rgba(255,255,255,0.5); */
+    background: transparent;
+    /* box-shadow: 0 0 20px 10px rgba(255,255,255,0.5); */
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    transition: background 0.5s ease;
+  }
+
+  .product-btns{
+    display:flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .btn-cart{
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+    background: black;
+    color: white;
+  }
+
+  .btn-cart:hover{
+    background: #40c9a2;
+    color: #fff;
+  }
+
+  .product-info{
+    background: white;
+    padding: 2rem;
+  }
+
+  .product-info-top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-name{
+    color: black;
+    display:block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .product-price{
+    padding-top:0.6rem;
+    padding-right:0.6rem;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .product-price#discount{
+    text-decoration: line-through;
+    color: rgb(224, 61, 61);
+    /* #40c9a2 */
+  }
+  
+
+  .product-img img{
+    
+    transition: transform 0.6s ease;
+  }
+
+  .product:hover .product-img img{
+    transform: scale(1.1);
+    
+  }
+
+  .product:hover .product-btns{
+    opacity: 1;
+  }
+  a.product-name{
+    transition: all 0.2s;
+  }
+  a.product-name:hover{
+    color: #40c9a2;
+  }
+
+  
+
+  .off-info .sm-title{
+    background: #40c9a2;
+    /* background: black; */
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    z-index:1;
+    letter-spacing: 3px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 2px 2px rgba(119, 114, 114, 0.5); */
+  }
+
+
+
+
+  
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  /* Media Queries */
+  @media screen and (min-width: 992px) {
+    .product-items{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .product-items{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+    .products .text-light{
+      width: 50%;
+    }
+  }

@@ -1,0 +1,16 @@
+.blog a
+{
+    text-decoration: none;
+    color:black;
+}
+
+.blog h1
+{
+    font-size: 20px;
+}
+
+#blogheader
+{
+    text-align :center;
+    font-size: x-large;
+}
