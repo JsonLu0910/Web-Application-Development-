@@ -1,0 +1,81 @@
+
+
+#shopping-cart table {
+	width: 100%;
+	background-color: #F0F0F0;
+}
+
+#shopping-cart table td {
+	/* background-color: #e5ff00; */
+	background-color: #ffffff;
+}
+
+.txt-heading h3{
+	color: azure;
+	background-color: black;
+	padding: 0.9rem;
+	overflow: auto;
+}
+
+#btnEmpty {
+	background-color: #ffffff;
+	border: #d00000 1px solid;
+	padding: 5px 10px;
+	color: #d00000;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+#hidden-text{
+	visibility: hidden;
+	display: none;
+}
+
+#hidden-text.successMssg{
+	visibility:visible;
+	display:initial;
+	font-size: 0.9rem;
+	color: black;
+}
+
+#hidden-text.failedMssg{
+	visibility:visible;
+	display:initial;
+	font-size: 0.9rem;
+	color: rgb(218, 34, 34);
+	margin-top: 2rem;
+}
+
+.tbl-cart {
+	font-size: 0.9em;
+}
+
+.tbl-cart th {
+	font-weight:bold;
+}
+
+.tbl-cart td.bold{
+	font-weight:bold;
+}
+
+.cart-item-image {
+	height: 180px;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.no-records {
+	text-align: center;
+	clear: both;
+	margin: 38px 0px;
+}
+#contShopbtn{
+	background-color: black;
+	padding: 0.8rem;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 5px;
+}

@@ -1,0 +1,91 @@
+body 
+{
+    font-size: 120%;
+    height: 100%;
+    margin : 0px;
+}
+
+.wallpaperlogin
+{
+    background-image: url(../image/background.jpg);
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+}
+
+.header 
+{
+    width: 30%;
+    margin: 50px auto 0px;
+    color: white;
+    background: #333;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px 20px 5px 20px;
+}
+
+form, .content 
+{
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.input-group 
+{
+    margin: 10px 0px 10px 0px;
+}
+.input-group label 
+{
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input 
+{
+    height: 30px;
+    width: 98%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+.input-group input:focus
+{
+    background-color: #ddd;
+}
+
+.btn 
+{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.btn:hover
+{
+    opacity:0.8;
+}
+
+.error 
+{
+    width: 95%; 
+    margin: 0px auto; 
+    padding: 10px; 
+    border: 1px solid #a94442; 
+    color: #a94442; 
+    background: #f2dede; 
+    border-radius: 5px; 
+    text-align: left;
+}
